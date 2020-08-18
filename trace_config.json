@@ -1,0 +1,35 @@
+{
+    "trace_qt_events":true,
+    "trace_file_on_start":"./latest_trace.json",
+    "trace_callables":[
+        "shapes_startup",
+        "shapes_slicing",
+        "shapes_viewing"
+    ],
+    "callable_lists":{
+        "shapes_startup":[
+            "napari.layers.shapes.shapes.Shapes._init_shapes",
+            "napari.layers.shapes.shapes.Shapes.__init__"
+        ],
+        "shapes_slicing":[
+            "napari.layers.shapes.shapes.Shapes._set_view_slice",
+            "napari.layers.shapes.shapes.Shapes._set_highlight",
+            "napari.layers.shapes.shapes.Shapes._update_thumbnail",
+            "napari.layers.shapes.shapes.Shapes._make_shape",
+            "napari.layers.shapes._shapes_models.rectangle.Rectangle.__init__",
+            "napari.layers.shapes._shapes_models.rectangle.Rectangle._update_displayed_data",
+            "napari.layers.shapes._shapes_models.shape.Shape._set_meshes",
+            "napari.layers.shapes._shapes_utils.triangulate_edge",
+            "napari.layers.shapes._shapes_utils.generate_2D_edge_meshes",
+            "napari.layers.shapes._shape_list.ShapeList.add",
+            "napari.layers.shapes._shape_list.ShapeList.to_colors",
+            "napari.layers.shapes._shape_list.ShapeList._update_displayed",
+            "napari.layers.shapes._shape_list.ShapeList._update_z_order",
+            "napari.layers.shapes._shape_list.ShapeList._update_ndisplay"
+        ],
+        "shapes_viewing":[
+            "napari._vispy.vispy_shapes_layer.VispyShapesLayer._on_data_change",
+            "napari._vispy.vispy_shapes_layer.VispyShapesLayer._on_highlight_change"
+        ]
+    }
+}
